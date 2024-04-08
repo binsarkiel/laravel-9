@@ -18,6 +18,7 @@
 
     ```php
     Route::controller(HomeController::class)->group(function () {
+        Route::get('/', 'index');
         Route::get('/about', 'aboutPage');
         Route::get('/contact', 'contactPage');
     });
