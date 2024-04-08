@@ -7,6 +7,6 @@
     <title>Tentang Kami</title>
 </head>
 <body>
-    <h1>Selamat datang di halaman "Tentang Kami"</h1>
+    <h1>Selamat datang di Halaman Tentang Kami // from controller.</h1>
 </body>
 </html>

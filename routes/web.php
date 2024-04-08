@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Home\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,10 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tentang-kami', function () {
-    return view('about');
-});
-
-Route::get('/kontak', function () {
-    return view('contact');
+Route::controller(HomeController::class)->group(function () {
+    Route::get('/tentang-kami', 'aboutPage');
+    Route::get('/kontak', 'contactPage');
 });
